@@ -1,7 +1,6 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { socialLinks } from "@/app/config/profile";
-
-const authorName = "Your Name";
+import { profileConfig } from "@/app/config/profile";
 
 const Footer = () => {
   return (
@@ -34,8 +33,7 @@ const Footer = () => {
 
         {/* Footer Text */}
         <div className="text-gray-600">
-          © 2024 SleekFolio • Made with ❤️ by{" "}
-          <span className="text-orange-600">{authorName}</span>
+          <span className="text-orange-600">{profileConfig.name}</span>
         </div>
       </div>
     </footer>
