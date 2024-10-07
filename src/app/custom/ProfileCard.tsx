@@ -9,6 +9,7 @@ const ProfileCard = () => {
       {/* Profile Photo and Title Section */}
       <div className="text-center mb-4">
         <Image
+          unoptimized
           src={profileConfig.profileImage}
           alt="Profile Picture"
           className="w-28 h-28 rounded-full mx-auto border-4 "

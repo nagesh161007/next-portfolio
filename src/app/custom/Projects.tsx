@@ -22,6 +22,7 @@ const ProjectsList = () => {
               <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-transform duration-300 cursor-pointer transform hover:scale-105">
                 {/* Project Image */}
                 <Image
+                  unoptimized
                   width={32}
                   height={32}
                   src={project.image}

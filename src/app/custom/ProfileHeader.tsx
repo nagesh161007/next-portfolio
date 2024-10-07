@@ -7,6 +7,7 @@ const ProfileHeader = () => {
       {/* Profile Image */}
       <div className="flex items-center space-x-4">
         <Image
+          unoptimized
           width={32}
           height={32}
           src={profile.profileImage}

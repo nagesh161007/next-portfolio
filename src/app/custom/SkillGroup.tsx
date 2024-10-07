@@ -26,6 +26,7 @@ const SkillAvatarGroup = ({ skills }: { skills: Skills[] }) => {
             {/* Skill Icon in Avatar Style */}
             <div className="w-8 h-8 rounded-full flex items-center justify-center border border-white shadow-md bg-white p-1">
               <Image
+                unoptimized
                 width={32}
                 height={32}
                 src={`/skills/${skill.icon}`}

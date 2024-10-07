@@ -29,6 +29,7 @@ const WorkExperienceAccordion = () => {
             <AccordionTrigger className="flex items-center justify-between p-4 bg-white hover:bg-gray-100 focus:outline-none rounded-md">
               <div className="flex items-center space-x-4 flex-1">
                 <Image
+                  unoptimized
                   width={32}
                   height={32}
                   src={`company/${experience.logo}`}
