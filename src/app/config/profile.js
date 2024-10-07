@@ -5,7 +5,7 @@ export const blogs = [
     id: 1,
     title: "Frontend Interview Preparation Guilde",
     description: "Resources for Frontend Interview Preparation",
-    image: "",
+    image: "/blog/medium.jpg",
     link: "https://medium.com/@sairamnageshwara99/frontend-interview-preparation-resources-d7aad0a9098e"
   }
 ];
