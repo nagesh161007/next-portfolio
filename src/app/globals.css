@@ -97,3 +97,26 @@ nav a[href^="#"]:focus {
   color: #f97316; /* Orange color for active link */
   background-color: #f3f4f6; /* Light gray background */
 }
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wave-animation {
+  display: inline-block; /* Ensure the emoji is treated as an inline element */
+  animation: wave 2s ease-in-out 3s infinite;
+}

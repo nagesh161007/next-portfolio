@@ -44,8 +44,7 @@ const EducationAccordion = () => {
                   {/* Institution and Location */}
                 </div>
               </div>
-              <div className="text-gray-500 text-sm mr-8">
-                {" "}
+              <div className="text-gray-500 text-sm mr-8 hidden sm:block">
                 {/* Year on the right */}
                 {education.period}
               </div>

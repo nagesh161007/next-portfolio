@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const WorkExperienceAccordion = () => {
   return (
-    <div>
+    <div className="max-w-4xl mx-auto p-2">
       {/* Heading Section with Icon */}
       <div className="flex items-center mb-4">
         <FaBriefcase className="text-orange-600 mr-2" size={24} />
@@ -26,7 +26,7 @@ const WorkExperienceAccordion = () => {
             value={`item-${experience.id}`}
             className="border shadow-sm rounded-md"
           >
-            <AccordionTrigger className="flex items-center justify-between p-4 bg-white hover:bg-gray-100 focus:outline-none rounded-md">
+            <AccordionTrigger className="flex items-center justify-between p-4 bg-white hover:bg-gray-100 focus:outline-none rounded-md w-full">
               <div className="flex items-center space-x-4 flex-1">
                 <Image
                   unoptimized
@@ -43,7 +43,7 @@ const WorkExperienceAccordion = () => {
                   </p>
                 </div>
               </div>
-              <div className="text-gray-500 text-sm mr-8">
+              <div className="text-gray-500 text-sm mr-2 hidden sm:block">
                 {experience.period}
               </div>
             </AccordionTrigger>

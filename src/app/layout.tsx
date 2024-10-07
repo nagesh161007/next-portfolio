@@ -13,8 +13,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <div className="min-h-screen flex justify-center gap-4 px-8 py-8">
+      <body className="inset-0 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:24px_24px] [background-attachment:fixed]">
+        <div className="min-h-screen flex justify-center gap-4 p-2 sm:p-8">
           {/* Left Section: Profile Card (Hidden on mobile screens) */}
           <aside
             className="hidden lg:flex flex-[2] sticky top-0 justify-end overflow-y-auto"
@@ -24,10 +24,10 @@ export default function RootLayout({
           </aside>
 
           {/* Center Section: Main Content */}
-          <main className="flex-1 lg:flex-[5] bg-white px-4 overflow-y-auto">
+          <main className="flex-1 lg:flex-[5] bg-white overflow-y-auto">
             <Analytics />
             <HeaderScrollProgress />
-            <div className="border border-gray-200 rounded-2xl shadow-sm p-8">
+            <div className="border border-gray-200 rounded-2xl shadow-sm p-2 sm:p-8">
               {/* Content Sections */}
               {children}
               <NavigationBar />

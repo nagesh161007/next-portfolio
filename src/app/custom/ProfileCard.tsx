@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { profileConfig } from "@/app/config/profile";
 import Image from "next/image";
+import { FaFileDownload } from "react-icons/fa";
 
 const ProfileCard = () => {
   return (
@@ -20,22 +21,13 @@ const ProfileCard = () => {
           {profileConfig.name}
         </h2>
         <p className="text-sm text-gray-500 mt-2">{profileConfig.title}</p>
-        <p className="text-sm text-gray-600 mt-2">
+        <p className="text-sm text-gray-500 mt-2">
           {profileConfig.company.name}
         </p>
-      </div>
-
-      {/* Dashed Divider */}
-      <hr className="border-dashed border-gray-300 mb-4" />
-
-      {/* Location Section */}
-      <div className="text-center mb-4">
-        <div className="flex items-center justify-center space-x-2">
-          <span className="text-sm text-gray-600">
-            <span className="text-sm mr-2">🇺🇸</span>
-            {profileConfig.location.address}
-          </span>
-        </div>
+        <span className="text-sm text-gray-500">
+          <span className="text-sm mr-2">🇺🇸</span>
+          {profileConfig.location.address}
+        </span>
       </div>
 
       {/* Dashed Divider */}
@@ -69,13 +61,13 @@ const ProfileCard = () => {
       <hr className="border-dashed border-gray-300 mb-4" />
 
       {/* Download Resume Button at the end */}
-      {/* <div className="mt-auto">
-        <Link href="/path-to-resume.pdf" download>
-          <button className="w-full flex items-center justify-center px-4 py-3 bg-gray-100 text-black font-medium rounded-lg border border-gray-300 hover:bg-gray-200 transition mt-4">
-            <FaFileDownload className="mr-4" size={16} /> Resume
+      <div className="mt-auto">
+        <Link href="/resume/resume.pdf" download target="_blank">
+          <button className="w-full flex items-center cursor-pointer justify-center px-4 py-3 bg-orange-500 text-white font-medium rounded-lg border border-orange-600 hover:bg-orange-600 transition mt-4">
+            <FaFileDownload className="mr-4 " size={16} /> Resume
           </button>
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 };

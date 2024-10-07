@@ -112,7 +112,7 @@ export const educationDetails = [
     ]
   },
   {
-    id: 1,
+    id: 2,
     institutionName: "SVCE",
     degree: "Bachelors in Infomation Technology",
     logo: "/company/svce.png",
@@ -134,12 +134,12 @@ export const socialLinks = {
 
 export const profileConfig = {
   name: "Nagesh Sairam",
-  title: "Frontend Engineer at SpectroCloud",
+  title: "Frontend Engineer at Spectro Cloud",
   introduction:
     "Hi, I’m Nagesh Sairam, a frontend engineer with 5+ years of experience in building responsive web applications using JavaScript, React, and cloud technologies",
   emoji: "👋",
   company: {
-    name: "SpectroCloud Inc"
+    name: ""
   },
   location: {
     address: "NewYork, USA"

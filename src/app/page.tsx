@@ -9,7 +9,7 @@ import FadeInSection from "@/app/custom/FadeInSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nageshwara Sairam",
+  title: "Nagesh Sairam",
   description: "Frontend Engineer at Spectro Cloud",
   openGraph: {
     type: "website",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: "Frontend Engineer at Spectro Cloud",
     images: [
       {
-        url: "/preview.png",
+        url: "/profile/nagesh.png",
         width: 800,
         height: 600,
         alt: "Nagesh Sairam"
@@ -27,10 +27,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@yourTwitterHandle", // Replace with your Twitter handle if applicable
+    site: "@nagesh1610",
     title: "Nageshwara Sairam",
     description: "Frontend Engineer at Spectro Cloud",
-    images: ["/preview.png"]
+    images: ["/profile/nagesh.png"]
   }
 };
 
