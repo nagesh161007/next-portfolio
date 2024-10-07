@@ -5,7 +5,7 @@ import { profileConfig } from "@/app/config/profile";
 const Footer = () => {
   return (
     <footer className="bg-white py-4 mt-10 border-t">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-end items-center">
         {/* Social Icons */}
         <div className="flex space-x-4 mb-4 md:mb-0">
           <a
@@ -29,11 +29,6 @@ const Footer = () => {
           >
             <FaTwitter className="text-gray-600 hover:text-black" size={24} />
           </a>
-        </div>
-
-        {/* Footer Text */}
-        <div className="text-gray-600">
-          <span className="text-orange-600">{profileConfig.name}</span>
         </div>
       </div>
     </footer>
