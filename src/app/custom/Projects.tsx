@@ -18,7 +18,7 @@ const ProjectsList = () => {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project) => (
-            <Link key={project.id} href={`/projects/${project.id}`} passHref>
+            <Link key={project.id} href={project.link} passHref target="_blank">
               <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-transform duration-300 cursor-pointer transform hover:scale-105">
                 {/* Project Image */}
                 <Image
