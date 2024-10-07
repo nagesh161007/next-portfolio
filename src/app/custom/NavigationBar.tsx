@@ -26,7 +26,7 @@ const FooterNav = () => {
 
   return (
     <TooltipProvider>
-      <div className="fixed bottom-8 left-0 right-0 flex justify-center">
+      <div className="fixed bottom-4 left-0 right-0 flex justify-center max-w-[500px] mx-auto">
         <div className="flex items-center space-x-3 bg-white p-3 rounded-lg shadow-lg border border-gray-300">
           {navItems.map((item) => (
             <Tooltip key={item.id}>
