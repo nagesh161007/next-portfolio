@@ -40,6 +40,12 @@ const TableOfContentsList = () => {
           Projects
         </a>
         <a
+          href="#education"
+          className="block text-gray-800 hover:text-gray-500 hover:bg-gray-100 rounded px-2 py-2"
+        >
+          Education
+        </a>
+        <a
           href="#blogs"
           className="block text-gray-800 hover:text-gray-500 hover:bg-gray-100 rounded px-2 py-2"
         >
