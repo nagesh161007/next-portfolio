@@ -3,8 +3,6 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 
-// app/config/tableOfContentsConfig.js
-
 export const tableOfContentsItems = [
   { href: "#introduction", label: "Introduction" },
   { href: "#work-experience", label: "Work Experience" },

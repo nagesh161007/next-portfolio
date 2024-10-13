@@ -4,7 +4,7 @@ import { profileConfig } from "@/app/config/profile";
 
 const Footer = () => {
   return (
-    <footer className="bg-white py-4 mt-10 border-t">
+    <footer className="bg-white py-4 mt-6 border-t">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-end items-center">
         {/* Social Icons */}
         <div className="flex space-x-4 mb-4 md:mb-0">

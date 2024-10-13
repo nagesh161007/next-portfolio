@@ -8,7 +8,7 @@ import { FaFolderOpen, FaExternalLinkAlt } from "react-icons/fa";
 const ProjectsList = () => {
   return (
     <>
-      <div className="flex items-center justify-between mb-4 mt-10">
+      <div className="flex items-center justify-between mb-4 mt-6">
         <div className="flex items-center">
           <FaFolderOpen className="text-orange-600 mr-2" size={24} />
           <h2 className="text-2xl font-bold">Projects</h2>

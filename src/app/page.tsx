@@ -9,28 +9,31 @@ import FadeInSection from "@/app/custom/FadeInSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nagesh Sairam",
-  description: "Frontend Engineer at Spectro Cloud",
+  title: "Sneha Govindarajan | Software Engineer",
+  description:
+    "Software Engineer with 3+ years of experience in building high-performance, user-centric web applications in JavaScript and modern web technologies.",
   openGraph: {
     type: "website",
-    url: "https://nageshsairam.com",
-    title: "Nagesh Sairam",
-    description: "Frontend Engineer at Spectro Cloud",
+    url: "https://sneha-portfolio-six.vercel.app", // Adjust if needed based on your actual portfolio URL
+    title: "Sneha Govindarajan | Software Engineer",
+    description:
+      "Experienced Software Engineer specializing in frontend development using React, JavaScript, and cloud technologies.",
     images: [
       {
-        url: "/profile/nagesh.png",
+        url: "/profile/sneha.png", // Make sure this is the correct image path
         width: 800,
         height: 600,
-        alt: "Nagesh Sairam"
+        alt: "Sneha Govindarajan"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    site: "@nagesh1610",
-    title: "Nageshwara Sairam",
-    description: "Frontend Engineer at Spectro Cloud",
-    images: ["/profile/nagesh.png"]
+    site: "@govindarajansn", // Adjust to your actual Twitter handle
+    title: "Sneha Govindarajan | Software Engineer",
+    description:
+      "Software Engineer with expertise in building responsive web applications using React, JavaScript, and cloud technologies.",
+    images: ["/profile/sneha.png"] // Ensure this path is correct
   }
 };
 

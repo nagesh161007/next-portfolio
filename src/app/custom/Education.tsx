@@ -12,7 +12,7 @@ const EducationAccordion = () => {
   return (
     <div>
       {/* Heading Section with Icon */}
-      <div className="flex items-center mb-4 mt-10">
+      <div className="flex items-center mb-4 mt-6">
         <FaGraduationCap className="text-orange-600 mr-2" size={24} />
         <h2 className="text-2xl font-bold">Education</h2>
       </div>

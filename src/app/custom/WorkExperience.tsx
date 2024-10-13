@@ -26,7 +26,7 @@ const WorkExperienceAccordion = () => {
             value={`item-${experience.id}`}
             className="border shadow-sm rounded-md"
           >
-            <AccordionTrigger className="flex items-center justify-between p-4 bg-white hover:bg-gray-100 focus:outline-none rounded-md w-full">
+            <AccordionTrigger className="flex items-center justify-between p-4 bg-white hover:bg-gray-100 focus:outline-none no-underline rounded-md w-full">
               <div className="flex items-center space-x-4 flex-1">
                 <Image
                   unoptimized

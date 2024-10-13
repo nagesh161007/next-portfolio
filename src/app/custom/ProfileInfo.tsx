@@ -6,7 +6,7 @@ const ProfileIntro = () => {
   return (
     <div className="text-center space-y-6">
       {/* Wave Emoji and Title */}
-      <div className="flex items-center justify-center mt-8">
+      <div className="flex items-center justify-center mt-4">
         <span className="text-4xl mr-4 wave-animation">
           {profileConfig.emoji}
         </span>

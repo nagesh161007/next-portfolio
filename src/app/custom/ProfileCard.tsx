@@ -2,7 +2,13 @@ import React from "react";
 import Link from "next/link";
 import { profileConfig } from "@/app/config/profile";
 import Image from "next/image";
-import { FaFileDownload } from "react-icons/fa";
+import { FaFileDownload, FaSuitcase, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+  TooltipProvider
+} from "@/components/ui/tooltip";
 
 const ProfileCard = () => {
   return (
@@ -20,14 +26,21 @@ const ProfileCard = () => {
         <h2 className="text-2xl font-bold text-gray-800 mt-2">
           {profileConfig.name}
         </h2>
-        <p className="text-sm text-gray-500 mt-2">{profileConfig.title}</p>
+        <p className="text-sm text-gray-500 mt-2 inline-flex items-center">
+          <span className="mr-2">
+            <FaSuitcase />
+          </span>
+          {profileConfig.title}
+        </p>
         <p className="text-sm text-gray-500 mt-2">
           {profileConfig.company.name}
         </p>
-        <span className="text-sm text-gray-500">
-          <span className="text-sm mr-2">🇺🇸</span>
+        <p className="text-sm text-gray-500 flex items-center">
+          <span className="mr-2">
+            <FaMapMarkerAlt />
+          </span>
           {profileConfig.location.address}
-        </span>
+        </p>
       </div>
 
       {/* Dashed Divider */}
@@ -36,25 +49,38 @@ const ProfileCard = () => {
       {/* Profiles Section */}
       <div className="mb-4">
         <h3 className="text-lg font-semibold text-gray-800">Profiles</h3>
-        <ul className="mt-2 space-y-3">
-          {profileConfig.profiles.map((profile, index) => (
-            <li key={index} className="flex items-center space-x-4">
-              <Link
-                href={profile.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-4 text-gray-800  hover:bg-gray-100 rounded-lg p-2 transition w-full"
-              >
-                <span className="text-2xl">{profile.icon}</span>
-
-                {/* Title and Description */}
-                <div className="text-left">
-                  <p className="text-sm text-gray-500">{profile.id}</p>
-                </div>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <TooltipProvider>
+          <ul className="flex items-center mt-2 space-x-2">
+            {profileConfig.profiles.map((profile, index) => (
+              <li key={index} className="flex items-center">
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Link
+                      href={profile.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-800 hover:bg-gray-100 rounded-lg p-2 transition"
+                    >
+                      {typeof profile.icon === "string" ? (
+                        <img
+                          src={profile.icon}
+                          alt={`${profile.name} logo`}
+                          className="w-8 h-8 object-cover"
+                        />
+                      ) : (
+                        <span className="text-3xl">{profile.icon} </span>
+                      )}
+                      {/* Increased icon size */}
+                    </Link>
+                  </TooltipTrigger>
+                  <TooltipContent className="bg-black text-white p-1 rounded shadow-md">
+                    {profile.id}
+                  </TooltipContent>
+                </Tooltip>
+              </li>
+            ))}
+          </ul>
+        </TooltipProvider>
       </div>
 
       {/* Dashed Divider */}

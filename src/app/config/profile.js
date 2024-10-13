@@ -1,100 +1,69 @@
-import { FaLinkedin, FaGithub, FaCode, FaFigma } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import {
+  FaLayerGroup,
+  FaCode,
+  FaDesktop,
+  FaServer,
+  FaCloud,
+  FaPalette
+} from "react-icons/fa";
 
 export const blogs = [
   {
     id: 1,
-    title: "Frontend Interview Preparation Guilde",
-    description: "Resources for Frontend Interview Preparation",
-    image: "/blog/medium.jpg",
-    link: "https://medium.com/@sairamnageshwara99/frontend-interview-preparation-resources-d7aad0a9098e"
+    title: "SAP Event webapp with React and BTP",
+    description:
+      "Gamification webapp for SAP BTP Success Event using React and BTP",
+    image: "/company/sap.svg",
+    link: "https://community.sap.com/t5/application-development-blog-posts/application-development-using-react-and-cap-deployed-in-btp/ba-p/13708089"
   }
 ];
 
 export const workExperiences = [
   {
-    id: 4,
-    companyName: "Spectro Cloud",
-    role: "Frontend Engineer",
-    logo: "SpectroCloud.svg",
-    location: "Remote, USA",
-    period: "May 2024 - Present",
+    id: 1,
+    companyName: "SAP America Inc.",
+    role: "Software Developer Intern",
+    logo: "sap.svg",
+    location: "Newton Square, PA",
+    period: "Jan 2024 – Present",
     description: [
-      "Visualized module circular imports with Madge and resolved them to reduce bundle size in Spectro Cloud Palette in Vite build, significantly improving load times and application performance.",
-      "Increased code coverage by 10% by implementing automated end-to-end testing with Playwright, including visual testing.",
-      "Developed a reusable common API layer library using axios and react-query core with cache management for UI apps."
+      "Developed an SAP UI5 and SAP BTP application for license management related to cost centers, automating data gathering from Excel files via OData services and reducing manual efforts by 40%.",
+      "Architected a full-stack license approval workflow application, including comprehensive database design and end-to-end flow architecture, improving procurement efficiency by 30%.",
+      "Developed a Node.js script to process over 10,000 records from the Flexera GraphQL API for SAP's third-party software licenses, enabling the software portfolio management team to reduce renewal costs by 30%.",
+      "Collaborated with cross-functional teams to build an event gamification web app in two weeks for the North America BTP Success event, engaging over 500 customers using React, React Router, CAP, S/4HANA, and Cloud Foundry.",
+      "Collaborated with stakeholders and conducted user interviews to gather requirements, translating insights into a Figma UI/UX design that accelerated application flow completion by 10%."
     ],
     skills: [
-      { name: "Kubernetes", icon: "kubernetes.svg" },
       { name: "React", icon: "react.svg" },
-      { name: "Typescript", icon: "typescript.svg" },
-      { name: "Amazon Web Services", icon: "aws.svg" }
+      { name: "SAP UI5", icon: "ui5.svg" },
+      { name: "Node.js", icon: "nodejs.svg" },
+      { name: "Figma", icon: "figma.svg" }
     ]
   },
   {
-    id: 3,
-    companyName: "Spectro Cloud",
-    role: "Frontend Engineer Intern",
-    logo: "SpectroCloud.svg",
-    location: "Boston, USA",
-    period: "June 2023 - September 2023",
-    description: [
-      "Single-handedly migrated Spectro Cloud’s open-source documentation site from Gatsby GraphQL API to Docusaurus in 10 weeks, achieving a 97% Lighthouse score across SEO, website performance, and accessibility with unit tests for code quality.",
-      "Improved user experience by introducing a new UI, dark mode, documentation versioning, contextual search, and reduced build times, along with automating API documentation using the OpenAPI docs plugin with Swagger JSON.",
-      "Addressed critical Gatsby bugs and streamlined deployment processes with CI/CD for search crawlers on Netlify and AWS, contributing to outstanding improvements in SEO, performance, and accessibility.",
-      "Created Docusaurus and Remark plugins for advanced MDX components, supplanting Gatsby GraphQL dependencies."
-    ],
-    skills: [
-      { name: "Docusaurus", icon: "docusaurus.svg" },
-      { name: "Gatsby", icon: "gatsby.svg" },
-      { name: "JavaScript", icon: "javascript.svg" },
-      { name: "Typescript", icon: "typescript.svg" },
-      { name: "Amazon Web Services", icon: "aws.svg" }
-    ],
-    country: ""
-  },
-  {
     id: 2,
-    companyName: "Flipkart",
-    role: "Senior Frontend Engineer",
-    logo: "Flipkart.svg",
-    location: "Bengaluru, India",
-    period: "March 2021 - August 2021",
-    description: [
-      "Spearheaded a collaborative revamp of the EMI page User Interface in the Flipkart app, transitioning from React to React Native and React Server-side pages in a micro frontend setup, increasing EMI adoption by 20% with A/B experimentation.",
-      "Crafted a user-friendly Credit Dashboard for Flipkart Fintech using React WebView, driving a 15% increase in credit card adoption and a 10% growth in lending products through adept technical and customer engagement skills.",
-      "Led the frontend design and development of Flipkart's Pay Later and credit card referral reward feature, culminating in over 10,000 Pay Later and 1,000 credit card sign-ups via referrals.",
-      "Orchestrated migration of UI infrastructure from traditional EC2 instances to Docker containerization and Kubernetes, integrating Grafana for monitoring and analytics, significantly enhancing scalability during Big Billion Day."
-    ],
-    skills: [
-      { name: "React", icon: "react.svg" },
-      { name: "Node.js", icon: "nodejs.svg" },
-      { name: "Redux", icon: "redux.svg" },
-      { name: "Storybook", icon: "storybook.svg" },
-      { name: "Docker", icon: "docker.svg" },
-      { name: "Kubernetes", icon: "kubernetes.svg" },
-      { name: "React Native", icon: "reactnative.svg" }
-    ],
-    country: ""
-  },
-
-  {
-    id: 1,
-    companyName: "Freshworks",
+    companyName: "Virtusa",
     role: "Software Engineer",
-    logo: "Freshworks.svg",
-    location: "Chennai",
-    period: "July 2018 - March 2021",
+    logo: "virtusa.jpeg",
+    location: "Chennai, India",
+    period: "Aug 2020 - Aug 2022",
     description: [
-      "Developed the Freshchat away experience featuring automated replies in sync with agent availability across time zones via WebSockets using Ember.js, achieving rapid adoption by 2500 customers with Ember i18n for multilingual support.",
-      "Implemented Google Calendar integration within Freshchat using Ember.js and Java, enhancing customer convenience by enabling direct meeting scheduling with agents and reducing dependence on external applications.",
-      "Optimized web application efficiency by implementing an intersection observer Ember NPM add-on, minimizing frontend to backend API calls by 30%, thereby enhancing performance and reducing load times by 2 seconds."
+      "Migrated the Watchtower frontend to React and TypeScript, enhancing node visualization with React Material, ESRI Maps GIS, and D3.js, reducing troubleshooting time for technicians by 15%.",
+      "Developed RESTful APIs in Java Spring Boot to deliver real-time node data via WebSockets, improving network issue resolution speed by 20% and increasing customer satisfaction scores by 10%.",
+      "Contributed to modularity and scalability using Nx monorepo and Storybook for isolated components, boosting code coverage by 20% using Jest, and implemented Cypress for cross-browser compatibility and end-to-end testing.",
+      "Scheduled and applied technical troubleshooting to resolve problems, prioritizing 20+ ad-hoc requests within deadlines.",
+      "Collaborated in Agile teams, engaged in daily scrums, code reviews, and maintained documentation for the entire migration process."
     ],
     skills: [
-      { name: "JavaScript", icon: "javascript.svg" },
-      { name: "Ember.js", icon: "ember.svg" },
-      { name: "Java", icon: "java.svg" }
-    ],
-    country: ""
+      { name: "Angular", icon: "angular.svg" },
+      { name: "React", icon: "react.svg" },
+      { name: "D3.js", icon: "d3js.svg" },
+      { name: "TypeScript", icon: "typescript.svg" },
+      { name: "Java", icon: "java.svg" },
+      { name: "Spring Boot", icon: "springboot.png" },
+      { name: "Amazon Web Services", icon: "aws.svg" }
+    ]
   }
 ];
 
@@ -102,10 +71,10 @@ export const educationDetails = [
   {
     id: 1,
     institutionName: "Northeastern University",
-    degree: "Master of Science in Software Engineering",
+    degree: "Master of Science, Information Systems",
     logo: "https://brand.northeastern.edu/wp-content/uploads/2022/06/seal-red.svg",
     location: "Boston, USA",
-    period: "August 2022 - April 2024",
+    period: "Aug 2024",
     description: [
       "Focused on software design, architecture, and cloud computing.",
       "Coursework: Application Engineering and Development, Database Management and Design, Network Structures, and Cloud Computing."
@@ -113,11 +82,11 @@ export const educationDetails = [
   },
   {
     id: 2,
-    institutionName: "SVCE",
-    degree: "Bachelors in Infomation Technology",
-    logo: "/company/svce.png",
+    institutionName: "Anna University",
+    degree: "Bachelor of Technology, Information Technology",
+    logo: "/company/annauniversity.png",
     location: "Chennai, India",
-    period: "August 2014 - April 2018",
+    period: "April 2020",
     description: [
       "Focused on software design, architecture, and cloud computing.",
       "Coursework: Application Engineering and Development, Database Management and Design, Network Structures, and Cloud Computing."
@@ -126,92 +95,185 @@ export const educationDetails = [
 ];
 
 export const socialLinks = {
-  github: "https://github.com/nagesh161007",
-  linkedin: "https://linkedin.com/in/sairam-nageshwara",
-  leetcode: "https://leetcode.com/u/sairamnageshwara99/",
-  twitter: "https://x.com/nagesh1610/"
+  github: "https://github.com/govindarajan.sn",
+  linkedin: "https://www.linkedin.com/in/sneha-govindarajan"
 };
 
 export const profileConfig = {
-  name: "Nagesh Sairam",
-  title: "Frontend Engineer at Spectro Cloud",
+  name: "Sneha Govindarajan",
+  title: "Software Engineer Intern at SAP",
   introduction:
-    "Hi, I’m Nagesh Sairam, a frontend engineer with 5+ years of experience in building responsive web applications using JavaScript, React, and cloud technologies",
+    "Software Engineer with 3+ years of experience, dedicated to building high-performance, user-centric web applications in JavaScript. Known for creating intuitive interfaces and excelling in problem-solving and effective communication.",
   emoji: "👋",
   company: {
     name: ""
   },
   location: {
-    address: "NewYork, USA"
+    address: "United States"
   },
   profiles: [
     {
       name: "LinkedIn",
-      link: "https://linkedin.com/in/sairam-nageshwara",
-      id: "sairam-nageshwara",
+      link: "https://linkedin.com/in/sneha-govindarajan",
+      id: "sneha-govindarajan",
       icon: <FaLinkedin className="text-blue-600" />
     },
     {
-      name: "LeetCode",
-      link: "https://leetcode.com/u/sairamnageshwara99",
-      id: "sairamnageshwara99",
-      icon: <FaCode className="text-orange-500" />
-    },
-    {
       name: "GitHub",
-      link: "https://github.com/nagesh161007",
-      id: "nagesh161007",
+      link: "https://github.com/govindarajansn",
+      id: "govindarajansn",
       icon: <FaGithub className="text-gray-800" />
     },
     {
-      name: "Figma",
-      link: "https://www.figma.com/@nagesh1610",
-      id: "nagesh1610",
-      icon: <FaFigma />
+      name: "Mail",
+      link: "mailto:snerajan6@gmail.com",
+      id: "snerajan6@gmail.com",
+      icon: "/gmail.svg"
     }
   ],
-  profileImage: "/profile/nagesh.png"
+  profileImage: "/profile/sneha.jpg"
 };
 
 export const projects = [
   {
     id: 1,
-    title: "Nike Customize Shoe",
-    image: "/projects/nikeapp.png",
-    link: "https://nike-customize-clone.vercel.app/",
+    title: "Customizable Car",
+    image: "/projects/car-thumbnail.png",
+    link: "https://car-model-threejs.vercel.app/",
     date: "March 2023",
-    description: "Nike Customizable Shoe using Three.js and Open AI"
+    description: "Customize your car using three.js and React."
   },
   {
     id: 2,
-    title: "Love and Thunder",
-    image: "/projects/unitygame.png",
-    link: "https://play.unity.com/en/games/a63a21e0-cbae-4d9f-b47e-7fbb54b71173/love-and-thunder",
-    date: "March 2023",
-    description: "Action Adventure game using Unity C#"
+    title: "FoodGram",
+    image: "/projects/foodgram.png",
+    link: "https://cook-book-mealdb.vercel.app/",
+    date: "April 2023",
+    description: "Get your recipe in one click - Yaaaay :-;"
   },
   {
     id: 3,
-    title: "Interview Battles",
-    image: "/skills/figma.svg",
-    link: "https://www.figma.com/file/RTdXifvIxuop9BXQEuNL2G/Interview-Battles?type=design&node-id=0%3A1&mode=design&t=dMFHElUvGybNnV7u-1",
-    date: "Nov 2023",
-    description: "Gamification Platform for mock Interviews"
+    title: "Tic-Tac-Toe 3D",
+    image: "/projects/tic-tac-toe-game.png",
+    link: "https://tic-tac-toe-3d-snowy.vercel.app/",
+    date: "May 2023",
+    description: "Are you bored? Just click and play."
   },
   {
     id: 4,
-    title: "FIFA Themed portfolio",
-    image: "/projects/FUT.png",
-    link: "https://nageshsairam.com",
-    date: "Jan 2023",
-    description: "FIFA FUT Themed Personel portfolio in Next.js"
+    title: "Cloud Deployment",
+    image: "/projects/cloud.jpeg",
+    link: "https://github.com/csye-snehagovindarajan/webapp",
+    date: "June 2023",
+    description: "AWS CI/CD Web App with React and Node.js."
   },
   {
     id: 5,
-    title: "Step Quest",
-    image: "/projects/StepQuest.jpg",
-    link: "https://github/nagesh161007",
-    date: "March 2024",
-    description: "Location based AR roaming IOS App"
+    title: "Happify",
+    image: "/projects/music.jpeg",
+    link: "https://happify-music-db.vercel.app/",
+    date: "July 2023",
+    description: "Music app using Spotify API."
+  },
+  {
+    id: 6,
+    title: "Huggy Buddy",
+    image: "/projects/HuggyBuddy.png",
+    link: "https://huggy-buddy.vercel.app/",
+    date: "August 2023",
+    description: "Sentiment Analysis App."
+  },
+  {
+    id: 7,
+    title: "Active Pay",
+    image: "/projects/activepay-thumbnail.jpeg",
+    link: "https://github.com/neu-mis-info6150-fall-2022/final-project-quadsquad",
+    date: "September 2023",
+    description: "Re-paying credit card bill and getting return rewards."
+  },
+  {
+    id: 8,
+    title: "Travelling Salesman Problem",
+    image: "/projects/tsp.jpeg",
+    link: "https://github.com/govindarajansn/FinalProject-INFO6205",
+    date: "October 2023",
+    description: "Optimized solution for the Travelling Salesman Problem."
+  },
+  {
+    id: 9,
+    title: "Online Book Store",
+    image: "/projects/book-store.jpeg",
+    link: "https://github.com/govindarajansn/ScanbuyApp",
+    date: "November 2023",
+    description:
+      "Fetch books using ISBN, title, or author from Google Books API."
+  }
+];
+
+export const techSkills = [
+  {
+    category: "Languages",
+    skills: ["JavaScript", "Java", "Python", "TypeScript"],
+    icon: <FaCode className="text-gray-400" />
+  },
+  {
+    category: "Frontend",
+    skills: [
+      "React",
+      "Angular",
+      "Next.js",
+      "SAP Fiori",
+      "Three.js",
+      "HTML5",
+      "CSS3",
+      "Storybook",
+      "SASS",
+      "Tailwind CSS",
+      "Webpack",
+      "Redux",
+      "Cypress",
+      "Jest"
+    ],
+    icon: <FaDesktop className="text-gray-400" />
+  },
+  {
+    category: "Backend",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "Spring Boot",
+      "Apache Maven",
+      "Spring MVC",
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "S/4 HANA"
+    ],
+    icon: <FaServer className="text-gray-400" />
+  },
+  {
+    category: "Cloud & DevOps",
+    skills: [
+      "AWS",
+      "SAP BTP",
+      "Docker",
+      "GitHub Actions (CI/CD)",
+      "Linux",
+      "Terraform",
+      "S3",
+      "Route 53",
+      "Kubernetes"
+    ],
+    icon: <FaCloud className="text-gray-400" />
+  },
+  {
+    category: "Testing",
+    skills: ["Jest", "Cypress", "React Testing Library", "Puppeteer"],
+    icon: <FaLayerGroup className="text-gray-400" />
+  },
+  {
+    category: "Design",
+    skills: ["Figma"],
+    icon: <FaPalette className="text-gray-400" />
   }
 ];
